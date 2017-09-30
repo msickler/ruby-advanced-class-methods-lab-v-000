@@ -45,11 +45,11 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
- name = filename.split(" - ")
- song = self.new
- song.artist_name = name[0]
- song.name = name[1]
- song
+  file_name = filename.split(/\s\-\s|\./)
+   song = self.new
+   song.artist_name = file_name[0]
+   song.name = file_name[1]
+   song
 end
 
 end
