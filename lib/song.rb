@@ -52,4 +52,13 @@ def self.new_from_filename(filename)
    song
 end
 
+def self.create_from_filename(filename)
+file_name = filename.split(/\s\-\s|\./)
+ song = self.new
+ song.artist_name = file_name[0]
+ song.name = file_name[1]
+ song.save
+ song
+end
+
 end
