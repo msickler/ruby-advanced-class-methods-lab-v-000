@@ -49,7 +49,8 @@ def self.new_from_filename(filename)
  song = self.new
  song.artist_name = name[0]
  song.name = name[1]
-
+ song.save
+ song
 end
 
 end
