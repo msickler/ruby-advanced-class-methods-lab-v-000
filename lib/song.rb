@@ -46,7 +46,7 @@ end
 
 def self.new_from_filename(filename)
  name = filename.split(" - ")
- song = self.new 
+ song = self.new
  song.artist_name = name[0]
  song.name = name[1]
 
