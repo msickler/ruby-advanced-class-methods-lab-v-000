@@ -61,4 +61,8 @@ file_name = filename.split(/\s\-\s|\./)
  song
 end
 
+def self.destroy_all
+  self.all.clear
+end
+
 end
